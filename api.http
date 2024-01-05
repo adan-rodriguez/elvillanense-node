@@ -1,0 +1,23 @@
+### Para obtener todas las noticias
+GET http://localhost:3000/api/articles
+
+### Para recuperar una noticia
+GET http://localhost:3000/api/articles/listas-elecciones-2023-en-villa-ana-1684612075503
+
+### Para crear una noticia
+POST http://localhost:3000/api/articles
+Content-Type: application/json
+
+{
+  "title": "Consultá dónde votás en las elecciones del domingo",
+  "lead": "La Cámara Nacional Electoral (CNE) pone a disposición de los ciudadanos los padrones de las Primarias, Abiertas, Simultáneas y Obligatorias (PASO) que se realizarán el próximo domingo 12 de septiembre.",
+  "image": "https://res.cloudinary.com/dh4eh6jen/image/upload/v1684387831/el-villanense/ftiqe7c9u6gua80tk01g.webp",
+  "altImage": "Persona cosultando el padrón electoral",
+  "content": "<p>La CNE estableci&oacute; que en los comicios se habilitar&aacute;n no m&aacute;s de ocho mesas de votaci&oacute;n por establecimiento, con el fin de evitar la aglomeraci&oacute;n de personas.</p>\n<p>Adem&aacute;s, se implementar&aacute; un protocolo sanitario para evitar contagios en el marco de la pandemia de coronavirus. El Tribunal Electoral de la Provincia de Santa Fe solicita a los/as electores/as que realicen la auto consulta al padr&oacute;n electoral antes del d&iacute;a de la elecci&oacute;n.</p>\n<p>En virtud de la situaci&oacute;n epidemiol&oacute;gica derivada del Covid-19 y con el objeto de que no se aglomeren votantes consultando la mesa de votaci&oacute;n, se informan las opciones para consultar el padr&oacute;n electoral:</p>\n<p>1- Consulta en l&iacute;nea al siguiente link:&nbsp;<a title=\"Consultar padr&oacute;n\" href=\"https://www.padron.gob.ar/\" target=\"_blank\" rel=\"noopener\">https://www.padron.gob.ar/</a></p>\n<p>2- Descargando la aplicaci&oacute;n MI ARGENTINA a su tel&eacute;fono celular.</p>\n<p>3- Llamando gratuitamente al tel&eacute;fono: 0800-999-7237 siguiendo las instrucciones que le da la operadora.</p>\n<p>4- Por SMS al 30777 mandando la palabra VOTO seguida de espacio, luego n&uacute;mero de DNI, otro espacio y la letra M o F (seg&uacute;n sea de g&eacute;nero masculino o femenino).</p>\n<p><iframe src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcamaraelectoral%2Fposts%2F4639402369417549&amp;show_text=true&amp;width=500\" width=\"100%\" height=\"615\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\"></iframe></p>"
+}
+
+### Para actualizar una noticia
+PATCH http://localhost:3000/api/articles/listas-elecciones-2023-en-villa-ana-1684612075503
+Content-Type: application/json
+
+{}
